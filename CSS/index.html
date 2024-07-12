@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS 3 ways</title>
+    <!-- External CSS -->
+    <link rel="stylesheet" href="./style.css" />
+
+    <!-- Internal CSS -->
+    <style>
+        h2 {
+            color: blue;
+        }
+    
+      h4 {
+        color: blue;
+      }
+
+      p {
+        color: yellow;
+      }
+    </style>
+
+  </head>
+  <body>
+
+    <!-- 
+        ORDER OF PRIORITY:
+            1. Inline CSS
+            2. Internal CSS
+            3. External CSS
+    -->
+    
+    <!-- This is styled using External CSS -->
+    <h2>CSS - Cascading Style Sheet</h2>
+
+    <!-- This is styled using Internal CSS -->
+    <h4>CSS : 3 ways</h4>
+
+    <!-- This is styled using Inline CSS -->
+     <p style="color: green;"> 
+        3 ways to apply CSS to HTML:
+        <ul style="color: lightsalmon;">
+            <li> External CSS </li>
+            <li> Internal CSS </li>
+            <li> Inline CSS </li>
+        </ul>
+     </p>
+  </body>
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Selectors</title>
+
+    <link rel="stylesheet" href="./selectors.css" />
+  </head>
+  <body>
+    <!-- This is styled using the Element Selector -->
+    <h2>CSS Selectors</h2>
+
+    <!-- Universal Selector -->
+    <p>This is styled using a universal selector.</p>
+
+    <!-- Class Selector -->
+    <p class="class-name">This is styled using a class selector.</p>
+
+    <!-- ID Selector -->
+    <p id="id-name">This is styled using an ID selector.</p>
+
+    <!-- Attribute Selector -->
+    <h6 href="https://www.example.com">
+      This is styled using an Attribute selector. H6 with an href value
+    </h6>
+
+    <p href="https://www.example.com">
+      This is styled using an Attribute selector. P tag with an href value
+    </p>
+    <a href="https://www.example.com"
+      >This is styled using an Attribute selector. <br />
+      This is an anchor tag with an href value.
+    </a>
+
+    <br />
+
+    <a>This is an anchor tag without an href value. </a>
+
+    <br />
+    <a href="https://www.google.com">
+      This is an anchor tag with a specific href value.
+    </a>
+
+    <!-- Descendant Selector -->
+    <div class="ancestor">
+      <h4>This is a heading.</h4>
+      <p>This is styled using a descendant selector.</p>
+    </div>
+
+    <!-- Grouping Selector -->
+    <h1>Welcome to my website!</h1>
+    <p class="parag">This is styled using a grouping selector.</p>
+    <span id="span">
+      This is another paragraph styled using a grouping selector.
+    </span>
+
+    <br />
+
+    <!-- Pseudo-classes -->
+    <p class="pseudo-class">Hover this. This is styled using a pseudo-class.</p>
+
+    <a class="parag2" href="https://www.google.com"
+      >Visit this link. This is styled using a pseudo-class.</a
+    >
+
+    <!-- Pseudo-element -->
+    <h3 class="heading3">Pseudo-element</h3>
+    <p class="parag3">This is styled using a pseudo-element.</p>
+
+    <br />
+  </body>
+</html>

@@ -1,0 +1,84 @@
+/* Universal Selector */
+* {
+    color: brown;
+}
+
+/* Element Select */
+h2 {
+    color: red;
+}
+
+/* Class Selector */
+.class-name {
+    color: blue;
+}
+
+/* ID Selector */
+#id-name {
+    color: yellow ;
+    background-color:brown;
+}
+
+/* Attribute Selector */
+/* targetting any element that has an [href] attribute */
+[href] {
+    color: green;
+}
+
+/* targetting an <a> with an [href] attribute */
+a[href] {
+    color: pink;
+    background-color: darkviolet;
+}
+
+/* targetting elements with a [href] value that is exactly "https://www.google.com */
+a[href="https://www.google.com"] {
+    color: tomato;
+    background-color: darkgreen;
+}
+
+/* Descendant Selector */
+.ancestor {
+    background-color: bisque;
+}
+
+.ancestor p {
+    color:cadetblue;
+}
+
+.ancestor h4 {
+    color: darkmagenta;
+}
+
+/* Grouping Selector */
+h1 , .parag , #span {
+    font-size: 15px;
+    background-color: beige;
+}
+
+/* Pseudo-class */
+.pseudo-class:hover{
+    background-color: navy;
+    color: white;
+}
+
+.parag2:visited {
+  background-color:burlywood;
+  color: black;
+}
+
+/* Pseudo-element */
+.heading3::first-letter {
+    color: black;
+    background-color: aqua;
+}
+
+.parag3::before {
+    content: "Placed before parag3 - ";
+    background-color: lightpink;
+}
+
+.parag3::after {
+    content: " - Placed after parag3";
+    background-color: lightskyblue;
+}

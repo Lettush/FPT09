@@ -1,0 +1,80 @@
+.content-box {
+    height: 80px;
+    width: 200px;
+    background-color: lavender;
+}
+
+.padding1 {
+    padding-top: 10px;
+    padding-right: 20px;
+    padding-bottom: 30px;
+    padding-left: 35px;
+}
+
+.padding2 {
+    padding: 50px 20px 10px;
+}
+
+.border1 {
+    border-width: 4px;
+    border-color: orange;
+    border-style: ridge;
+    border-radius: 20px;
+}
+
+.border2 {
+    border: crimson 8px double;
+    border-radius: 5px 20px 50px 100px;
+}
+
+/* 
+    border: border-style || border-width ||
+    border-color;
+
+    border-radius:
+        1 value = applied to all 4 sides
+        2 value = top-left bottom-right || top-right bottom-left
+        3 value = top-left || top-right bottom-left || bottom-right
+        4 value = top-left || top-right || bottom-right || bottom-left 
+*/
+
+.mixed-borders {
+    border-style: dotted dashed solid double;
+    border-width: 4px;
+    border-color: blue;
+    border-radius: 10px;
+
+    border-top: 5px solid purple;
+    border-right: 5px dashed green;
+    border-bottom: 8px dotted red;
+    border-left: 10px double blueviolet;
+    border-radius: 50px 15px 35px 8px;
+}
+
+.margin1 {
+    margin-top: 20px;
+    margin-left: 80px;
+    margin-right: 10px;
+    margin-bottom: 50px;
+}
+
+.margin2 {
+    margin: 30px 20px 40px 50px;
+}
+
+/* 
+    == PADDING and MARGIN ==
+    1 value = applied to all 4 sides
+    2 value = top and bottom side || left and right side
+    3 value = top side || left and right side || bottom side
+    4 value = top side || right side || bottom side || left side
+*/
+
+.circle-container {
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+    color: white;
+    border-radius: 50%;
+    text-align: center;
+}

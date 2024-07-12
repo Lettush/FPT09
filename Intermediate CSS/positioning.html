@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Positioning</title>
+    <style>
+        /* Ancestor Element */
+        .ancestor {
+            border: 2px solid black;
+            padding: 20px;
+            margin: 20px;
+            position: relative;
+        }
+
+        /* 
+            Relative Positioning 
+            - moving the element based on its original position
+            - makes it a parent for its contained elements
+        */
+        .relative {
+            position: relative;
+            /* 
+                positioning props
+                top, left, right, bottom
+            */
+            top: 0px;
+            left: 60px;
+        }
+
+        /* 
+            Absolute Positioning
+            - moving the element based on its parent (container that has position: relative)
+        */
+        .absolute {
+            position: absolute;
+            /* 
+                positioning props
+                top, left, right, bottom
+            */
+            bottom: 10px;
+            right: 20px;
+        }
+
+        /* 
+            Fixed Positioning
+            - keep an element on screen while scrolling
+        */
+        .fixed {
+            position: fixed;
+            /* 
+                positioning props
+                top, left, right, bottom
+            */
+            bottom: 20px;
+            right: 20px;
+        }
+
+        /* 
+            Sticky Positioning
+            - STATIC until we reach the positioning property, then it becomes fixed
+        */
+        .sticky {
+            position: sticky;
+            /* 
+                positioning props
+                top, left, right, bottom
+            */
+            top: 0px;
+            bottom: 0px;
+        }
+    </style>
+  </head>
+  <body>
+    <div class="ancestor">
+      <div>This is the first line.</div>
+      <div>This is the second line.</div>
+      <div class="relative">Relative Positioning</div>
+      <div class="absolute">Absolute Positioning</div>
+      <div class="fixed">Fixed Positioning</div>
+    </div>
+
+    <div style="height: 2000px">
+      Scroll Down to see the sticky positioning in action.
+    </div>
+    <div class="sticky">Sticky Positioning</div>
+    <div style="height: 2000px"></div>
+  </body>
+</html>
